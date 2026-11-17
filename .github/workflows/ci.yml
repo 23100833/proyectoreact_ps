@@ -105,7 +105,7 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         env:
-          CYPRESS_BASE_URL: ${{ needs.deploy.outputs.vercel_url }}
+          CYPRESS_BASE_URL: https://proyectoreactps.vercel.app
           CYPRESS_SCREENSHOT_ON_RUN_FAILURE: false
           CYPRESS_VIDEO: false
           # 💡 Evita problemas de renderizado de fuentes/gráficas virtuales en Linux sin GUI
